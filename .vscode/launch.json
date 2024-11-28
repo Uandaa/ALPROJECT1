@@ -9,12 +9,12 @@
             "serverInstance": "BC200",
             "port": 7049,
             "authentication": "UserPassword",
-            "startupObjectId": 22,
-            "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "Recreate"
+        
         }
     ]
 }
