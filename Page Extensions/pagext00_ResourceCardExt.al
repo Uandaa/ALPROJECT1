@@ -1,5 +1,5 @@
 pageextension 50110 "CSD ResourceCardExt" extends "Resource Card"
-//
+//lab 5.1
 {
     layout
     {

@@ -1,5 +1,5 @@
 pageextension 50101 "CSD ResourceListExt" extends "Resource List"
-
+//lab 5.1
 {
     layout
     {
