@@ -32,9 +32,4 @@ table 50103 "CSD Seminar Setup"
         }
     }
 
-
-
-
-
-
 }
