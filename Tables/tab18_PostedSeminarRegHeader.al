@@ -3,6 +3,9 @@ table 50118 "CSD Posted Seminar Reg. Header"
 
     //Lab 7.3 task 1
     Caption = 'Posted Seminar Registration Header';
+    //Lab 8.2
+    LookupPageId = "CSD Posted Seminar Reg. List";
+    DrillDownPageId = "CSD Posted Seminar Reg. List";
 
 
     fields
@@ -176,6 +179,10 @@ table 50118 "CSD Posted Seminar Reg. Header"
     keys
     {
         key(PK; "No.")
+        {
+        }
+        //Lab 8
+        key(SK; "Posting Date")
         {
         }
         key(Key2; "Room Resource No.")
