@@ -2,6 +2,8 @@ table 50104 "CSD Seminar"
 //lab 5.2
 {
     Caption = 'CSD Seminar';
+    LookupPageId = "CSD Seminar List";
+    DrillDownPageId = "CSD Seminar List";
 
     fields
     {

@@ -1,4 +1,4 @@
-pageextension 50102 "CSD ResourceCardExt" extends "Resource Card"
+pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
 //lab 5.1
 {
     layout
@@ -34,7 +34,7 @@ pageextension 50102 "CSD ResourceCardExt" extends "Resource Card"
     trigger OnAfterGetCurrRecord()
 
     begin
-        ShowMaxField := (Rec.Type = Rec.Type::Machine);
+        ShowMaxField := (Rec.Type = Rec.Type::Room);
         CurrPage.Update(false);
     end;
 

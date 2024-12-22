@@ -67,7 +67,7 @@ table 50110 "CSD Seminar Reg. Header"
         field(5; "Instructor Resource No."; Code[20])
         {
             Caption = 'Instructor Resource No.';
-            TableRelation = Resource where(Type = const(Person));
+            TableRelation = Resource where(Type = const(Instructor));
 
             trigger OnValidate();
             begin
@@ -78,7 +78,7 @@ table 50110 "CSD Seminar Reg. Header"
         {
             Caption = 'Instructor Name';
             CalcFormula = Lookup(Resource.Name where("No." = Field("Instructor Resource No."),
-                                                      Type = const(Person)));
+                                                      Type = const(Instructor)));
             Editable = false;
             FieldClass = FlowField;
         }
@@ -104,7 +104,7 @@ table 50110 "CSD Seminar Reg. Header"
         field(11; "Room Resource No."; Code[20])
         {
             Caption = 'Room Resource No.';
-            TableRelation = Resource where(Type = const(Machine));
+            TableRelation = Resource where(Type = const(Room));
 
             trigger OnValidate();
             begin
@@ -349,8 +349,8 @@ table 50110 "CSD Seminar Reg. Header"
             SeminarSetup.TestField("Seminar Registration Nos.");
             NoSeriesMgt.InitSeries(SeminarSetup."Seminar Registration Nos.", xRec."No. Series", 0D, "No.", "No. Series");
         end;
-
         InitRecord();
+
     end;
 
     procedure AssistEdit(OldSeminarRegHeader: Record "CSD Seminar Reg. Header"): Boolean;
