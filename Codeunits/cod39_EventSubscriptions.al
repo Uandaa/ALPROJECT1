@@ -33,7 +33,7 @@ codeunit 50139 "CSD EventSubscriptions"
             DocumentEntry.Init();
             DocumentEntry."Entry No." := NextEntryNo;
             DocumentEntry."Table ID" := Database::"CSD Posted Seminar Reg. Header";
-            DocumentEntry."Document Type" := 0;
+            DocumentEntry."Document Type" := DocumentEntry."Document Type"::"Quote";
             DocumentEntry."Table Name" := CopyStr(PostedSeminarRegHeader.TableCaption, 1, MaxStrLen(DocumentEntry."Table Name"));
             DocumentEntry."No. of Records" := DocNoOfRecords;
             DocumentEntry.Insert();
@@ -55,7 +55,7 @@ codeunit 50139 "CSD EventSubscriptions"
             DocumentEntry.Init();
             DocumentEntry."Entry No." := NextEntryNo;
             DocumentEntry."Table ID" := Database::"CSD Seminar Ledger Entry";
-            DocumentEntry."Document Type" := 0;
+            DocumentEntry."Document Type" := DocumentEntry."Document Type"::"Quote";
             DocumentEntry."Table Name" := CopyStr(SeminarLedgerEntry.TableCaption, 1, MaxStrLen(DocumentEntry."Table Name"));
             DocumentEntry."No. of Records" := DocNoOfRecords;
             DocumentEntry.Insert();

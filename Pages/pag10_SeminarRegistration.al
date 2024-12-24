@@ -144,7 +144,7 @@ page 50110 "CSD Seminar Registration"
                 }
 
                 //Lab 7.5 task 8
-                action("&Post")
+                action("P&ost")
                 {
                     Caption = '&Post';
                     Image = PostDocument;
@@ -153,6 +153,21 @@ page 50110 "CSD Seminar Registration"
                     PromotedCategory = Process;
                     ShortcutKey = F9;
                     RunObject = codeunit "CSD Seminar-Post (Yes/No)";
+                }
+                //Lab 9.1 task 8
+                action("&Print")
+                {
+                    Caption = '&Print';
+                    Image = Print;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    PromotedCategory = Process;
+                    trigger OnAction()
+                    var
+                        SeminarReportSelection: Record "CSD Seminar Report Selections";
+                    begin
+                        SeminarReportSelection.PrintReportSelection(SeminarReportSelection.Usage::Registration, Rec);
+                    end;
                 }
             }
         }
