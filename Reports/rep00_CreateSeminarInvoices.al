@@ -1,4 +1,4 @@
-report 50100 "Create Seminar Invoices"
+report 50100 "CSD Create Seminar Invoices"
 {
 
     //   Chapter 9 - Lab 2
