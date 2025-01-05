@@ -46,7 +46,7 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
                 SeminarRegister.Init();
                 SeminarRegister."No." := SeminarRegister."No." + 1;
                 SeminarRegister."From Entry No." := NextEntryNo;
-                SeminarRegister."To Entry No." := 0;
+                SeminarRegister."To Entry No." := NextEntryNo;
                 SeminarRegister."Creation Date" := Today;
                 SeminarRegister."Source Code" := SeminarRegister."Source Code";
                 SeminarRegister."Journal Batch Name" := SeminarRegister."Journal Batch Name";
