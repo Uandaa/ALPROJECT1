@@ -50,7 +50,7 @@ report 50100 "CSD Create Seminar Invoices"
                                     "Charge Type"::Room:
                                         SalesLine."No." := "Room Resource No.";
                                     "Charge Type"::Participant:
-                                        SalesLine."No." := "Instructor Resource No.";
+                                        SalesLine."No." := "Participant Contact No.";
                                 end;
                             end;
                     end;

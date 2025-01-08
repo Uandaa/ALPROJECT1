@@ -39,6 +39,9 @@ page 50110 "CSD Seminar Registration"
                 field("Posting Date"; Rec."Posting Date")
                 {
                 }
+                field("Posting No. Series"; Rec."Posting No. Series")
+                {
+                }
                 field("Document Date"; Rec."Document Date")
                 {
                 }

@@ -162,6 +162,12 @@ page 50142 "CSD Seminar Manager RoleCenter"
                 Image = CreateJobSalesInvoice;
                 RunObject = report "CSD Create Seminar Invoices";
             }
+            action(ParticipantsList)
+            {
+                Caption = 'Participants List ';
+                Image = CreateJobSalesInvoice;
+                RunObject = report "CSD SeminarRegParticipantList";
+            }
             action(Navigate)
             {
                 Caption = 'Navigate';
@@ -169,6 +175,7 @@ page 50142 "CSD Seminar Manager RoleCenter"
                 RunObject = page Navigate;
                 RunPageMode = Edit;
             }
+
         }
     }
 }
