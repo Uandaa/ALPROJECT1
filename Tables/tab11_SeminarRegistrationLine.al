@@ -162,7 +162,7 @@ table 50111 "CSD Seminar Registration Line"
         field(14; Registered; Boolean)
         {
             Caption = 'Registered';
-            Editable = false;
+            //Editable = false;
         }
     }
 

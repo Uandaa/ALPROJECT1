@@ -15,16 +15,17 @@ page 50140 "CSD Seminar Manager Activities"
                 Caption = 'Registration';
                 field(Planned; Rec.Planned)
                 {
-
+                    ApplicationArea = All;
                 }
                 field(Registered; Rec.Registered)
                 {
-
+                    ApplicationArea = All;
                 }
                 actions
                 {
                     action(New)
                     {
+                        ApplicationArea = All;
                         Caption = 'New';
                         RunObject = page "CSD Seminar Registration";
                         RunPageMode = Create;
@@ -36,7 +37,7 @@ page 50140 "CSD Seminar Manager Activities"
             {
                 field(Closed; Rec.Closed)
                 {
-
+                    ApplicationArea = All;
                 }
             }
         }
